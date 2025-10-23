@@ -1,0 +1,129 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap');
+@font-face {
+    font-family: fixen;
+    src: url(assets/StudioFeixenSans-Bold.woff2);
+}
+
+@font-face {
+    font-family: fixen-sans;
+    src: url(assets/studio-feixen-sans-variable.woff2);
+}
+/* 
+.hero{
+    background-image: url(assets/dark.jfif);
+    overflow: hidden;
+} */
+
+.skills{
+  background: linear-gradient(135deg, #0b0b0f, #1c1b33, #2a234f);
+
+}
+
+
+/* Stroke text effect */
+.stroke-text {
+  -webkit-text-stroke: 1.5px #f43f5e; /* rose-600 */
+  color: transparent;
+}
+.stroke-text-2 {
+  -webkit-text-stroke: 1.5px #ff002b; /* rose-600 */
+  color: transparent;
+}
+
+/* subtle animation for “Hey” */
+@keyframes pulse-stroke {
+  0%, 100% { -webkit-text-stroke: 1.5px #f43f5e; }
+  50% { -webkit-text-stroke: 1.5px #f59e0b; } /* amber-500 */
+}
+
+.stroke-text {
+  animation: pulse-stroke 3s infinite ease-in-out;
+}
+
+/* uppercase outline variant */
+.text-stroke {
+  -webkit-text-stroke: 1.2px #ffffff;
+  color: transparent;
+  opacity: 0.9;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Premium moving gradient */
+.animate-gradient {
+  background: linear-gradient(120deg,
+    #0f0c29,
+    #302b63,
+    #24243e,
+    #5b21b6,
+    #7e22ce,
+    #1e3a8a,
+    #0f172a
+  );
+  background-size: 800% 800%;
+  animation: gradientMove 20s ease-in-out infinite;
+  filter: blur(200px);
+  opacity: 0.5;
+}
+
+ /* Enable 3D perspective */
+  .perspective {
+    perspective: 1000px;
+  }
+
+  /* Hover rotation effect */
+  .hover\\:rotate-y-12:hover {
+    transform: rotateY(12deg) scale(1.05);
+  }
+
+  .mouse{
+    box-shadow: 0 0 20px #ffc300, 0 0 40px #ffc300;
+
+  }
+
+  @keyframes orbit {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.orbit-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-origin: center;
+  animation: orbit 10s linear infinite;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit-text::after {
+  content: "SPINNING TEXT AROUND";
+  position: absolute;
+  top: -50%; /* moves text outside the circle */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.svg {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
