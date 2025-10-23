@@ -7,6 +7,7 @@ export default function GlowingOrb(props) {
   useFrame(()=> {
     if (ref.current) ref.current.rotation.y += 0.001
   })
-  const { scene } = useGLTF('src/assets/magical_orb.glb')
+  const { scene } = useGLTF('/assets/magical_orb.glb')
   return <primitive ref={ref} object={scene} scale={3} {...props} />
 }
+
