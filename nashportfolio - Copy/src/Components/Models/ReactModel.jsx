@@ -7,6 +7,7 @@ export default function ReactModel(props) {
   useFrame(()=> {
     if (ref.current) ref.current.rotation.y += 0.001
   })
-  const { scene } = useGLTF('src/assets/react_logo.glb')
+  const { scene } = useGLTF('/assets/react_logo.glb')
   return <primitive  object={scene} scale={0.3} {...props} />
 }
+
