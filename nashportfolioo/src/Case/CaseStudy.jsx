@@ -1,5 +1,6 @@
 // src/data/casestudy.js
 import foodShortImg from "../assets/Gemini_Generated_Image_85bl3j85bl3j85bl.png";
+import kanbanImg from "../assets/kanban_board.png"; 
 import ochiImg from "../assets/Screenshot 2025-10-15 104702.png";
 import k72Img from "../assets/Screenshot 2025-10-22 100258.png";
 
@@ -79,8 +80,36 @@ Working on Ochi taught me how to combine motion design with React, optimize anim
 Built to explore modern UI with interactivity and immersive storytelling.
 `,
   },
+   {
+    name: "Kanban Board",
+    title: "Kanban Board Component Case Study",
+    mainImg: kanbanImg,
+    screenshots: "",
+    github: "https://github.com/Nashonlyy-dev/kanbanbordcomponent",
+    live: "https://kanbanbordcomop.netlify.app/?path=/story/components-kanbanboard--default",
+    description: `
+Kanban Board Case Study
+
+🗂 This project is a fully interactive Kanban Board built with **React, TypeScript, Tailwind CSS, and dnd-kit**. 
+It allows users to create, edit, delete, and drag tasks across columns with a smooth, responsive UI. 
+
+Key Highlights:
+• Drag-and-drop tasks with real-time visual feedback  
+• Task creation and editing with pre-filled modal for easy updates  
+• Delete tasks with confirmation prompt  
+• Fully responsive layout for desktop, tablet, and mobile  
+• Storybook integration showcasing all component states  
+• Priority indicators and tags for better task management  
+
+Tech Used:
+React.js, TypeScript, Tailwind CSS, dnd-kit, Storybook
+
+This project helped me learn new tools like Storybook and dnd-kit, improve state management for drag-and-drop, and build reusable, modular components with TypeScript. It was a challenge to debug interactions and animations, but it taught me valuable lessons about component-driven development and responsive UI design.
+`,
+  },
 ];
 
 export function getCaseStudyByName(name) {
   return caseStudies.find((p) => p.name.toLowerCase() === name.toLowerCase());
 }
+
